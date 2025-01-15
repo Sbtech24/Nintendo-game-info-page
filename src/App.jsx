@@ -7,17 +7,19 @@ const App = () => {
       <Header />
 
       <main>
-        <div>
+        <div className=" flex justify-center bg-lightGrey p-3">
           <p>
             Free shipping on orders $50 or more. Restrictions apply | Earn my
             Nintendo Points on digital games
           </p>
         </div>
 
-        <section>
-          <div>
+        <section className="bg-lightBlue">
+          <div className="flex max-w-screen-md mx-auto bg-white justify-center" >
             {/* carosel div left side  */}
-            <div></div>
+            <div className="w-1/2">
+              <img src="./assets/game2.jpg" alt="" />
+            </div>
 
             {/* Right div */}
             <div>
