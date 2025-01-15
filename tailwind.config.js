@@ -12,7 +12,8 @@ export default {
         lightBlue:"#d6f0fa",
         white:"#ffffff",
         lightGrey:"#efefef",
-        darkGrey:"#434242"
+        darkGrey:"#434242",
+        darkGrey2:"#484848",
       }
     },
   },

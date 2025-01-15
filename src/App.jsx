@@ -14,27 +14,27 @@ const App = () => {
           </p>
         </div>
 
-        <section className="bg-lightBlue">
-          <div className="flex max-w-screen-md mx-auto bg-white justify-center" >
+        <section className="bg-lightBlue p-5">
+          <div className="flex max-w-screen-md mx-auto bg-white justify-center p-10 gap-2" >
             {/* carosel div left side  */}
             <div className="w-1/2">
               <img src="./assets/game2.jpg" alt="" />
             </div>
 
             {/* Right div */}
-            <div>
-              <p>Nitendo Switch </p>
-              <h1>Stardew Valley</h1>
-              <div>
-                <span>$14.99</span>
-                <button>Like Button</button>
+            <div classname="p-3">
+              <p className="text-sm">Nintendo Switch </p>
+              <h1 className="text-darkGrey2 font-semibold text-lg">Stardew Valley</h1>
+              <div className="flex justify-between">
+                <span className="text-darkGrey2 font-semibold text-lg">$14.99</span>
+                <button><box-icon name="heart" color="red"></box-icon></button>
               </div>
 
-              <p>Eligible for up 75 Gold points </p>
+              <p className="text-sm ">Eligible for up 75 Gold points </p>
 
-              <button>Direct download</button>
+              <button className="bg-red p-3 text-white rounded-md w-full">Direct download</button>
 
-              <p>
+              <p className="text-sm ">
                 This item will be sent to your system automatically after
                 purchase
               </p>
@@ -43,11 +43,11 @@ const App = () => {
         </section>
 
         <section>
-          <div>
+          <div className="flex justify-center max-w-screen-md gap-3 mx-auto">
             <div>
-              <h2>You're moving to the valley</h2>
+              <h2 className="text-darkGrey2 font-bold">You're moving to the valley</h2>
 
-              <p>
+              <p className="text-sm">
               You’ve inherited your 
               grandfather’s old farm plot in Stardew Valley.
               Armed with hand-me-down tools and a few coins, you set out to begin your new life. Can you learn to live off the land and turn these overgrown fields into a thriving home? It won’t be easy. Ever since Joja Corporation came to town, the old ways of life have all but disappeared.
@@ -59,51 +59,62 @@ const App = () => {
 
               </p>
               {/* Read More button */}
-              <p>Sofware description provided by the publisher </p>
-              <button>Explore this game's official website </button>
+              <p className="text-sm">Sofware description provided by the publisher </p>
+              <button className="bg-red p-3 text-white rounded-md w-full">Explore this game's official website </button>
             </div>
 
             <div>
               {/* Image  */}
+              <img src="./assets/game2.jpg" alt="" />
+            
             </div>
+
           </div>
         </section>
 
         <section>
-          <div>
-            <h3>ESRB rating</h3>
+          <div className="flex max-w-screen-md mx-auto justify-between">
 
-            <div>
-              <img src="" alt="" />
+          
+            <div className="bg-lightGrey w-1/2 text-center p-3">
+              <h3 className="text-darkGrey font-semibold">ESRB rating</h3>
 
               <div>
-                <p>Fantasy Violence,Use of Alcohol,Use of Tobacco,
-                  Simulated Gambling, Mild Language,Mild Blood 
+                <img src="" alt="" />
 
-                </p>
+                <div className="text-left bg-white ">
+                  <p className="text-sm p-2 ">Fantasy Violence,Use of Alcohol,Use of Tobacco,
+                    Simulated Gambling, Mild Language,Mild Blood 
 
-                <p>Users Interact </p>
+                  </p>
+
+                  <p className="text-sm border-t p-2 border-t-black">Users Interact </p>
+                </div>
+                
               </div>
-              
-            </div>
-          </div>
-
-
-
-          <div>
-            <div>
-              <div></div>
-              <div></div>
-              <div></div>
             </div>
 
-            <div>
-              <ul>
-                <li>TV</li>
-                <li>Tabletop</li>
-                <li>Handheld</li>
-              </ul>
+
+
+            <div className="bg-lightGrey">
+              <div>
+                <div>
+                  <box-icon name="tv"></box-icon>
+                </div>
+                <div></div>
+                <div></div>
+              </div>
+
+              <div>
+                <ul className="flex justify-around">
+
+                  <li>TV</li>
+                  <li>Tabletop</li>
+                  <li>Handheld</li>
+                </ul>
+              </div>
             </div>
+
           </div>
         </section>
 
